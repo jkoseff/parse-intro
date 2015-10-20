@@ -1,14 +1,16 @@
 // Initialize Parse app
 
+Parse.initialize("LOoFeuRPNdUCTyxbIcsusf2FL9ROVMXOYzuz18OV", "fZVl86yFr8krzYPpYPlYivqjKHKdqj1YhV8HgUnI");
 
-// Create a new sub-class of the Parse.Object, with name "Music"
 
+// Create a new sub-class of the Parse.Object, with name Music
+var music = Parse.Object.extend('Music')
 
 // Create a new instance of your Music class 
-
+var musicItem = new music()
 
 // Set a property 'band' equal to a band name
-
+music.set('band', 'Nickelback')
 
 // Set a property 'website' equal to the band's website
 
